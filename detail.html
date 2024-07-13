@@ -7,13 +7,12 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="style/style.css">
     <title>Devjobs</title>
-    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header-component flex">
-            <h1><img src="./assets/desktop/logo.svg" alt="logo"></h1>
+            <h1 onclick="location.href='index.html'"><img src="./assets/desktop/logo.svg" alt="logo"></h1>
             <div class="toggle flex">
                 <img src="./assets/desktop/icon-sun.svg" alt="sun">
                 <div class="switch-toggle" id="switch">
@@ -39,7 +38,7 @@
         <div class="item-info" id="item-info">
             <div class="vacancy-about flex">
                 <div>
-                    <span class="post-time"></span> · <span class="part-time"></span>
+                    <span class="post-time"></span><span> · </span><span class="part-time"></span>
                     <h1 class="job"></h1>
                     <p class="location"></p>
                 </div>
@@ -47,11 +46,11 @@
             </div>
             <div class="item-body">
                 <p class="description"></p>
-                <h2>Requirements</h2>
+                <h2 class="marginator">Requirements</h2>
                 <div class="require-div">
                     <p class="require"></p>
                 </div>
-                <h2>What You Will Do</h2>
+                <h2 class="marginator">What You Will Do</h2>
                 <div class="todo-div">
                     <p class="to-do"></p>
                 </div>

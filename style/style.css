@@ -7,6 +7,11 @@
     list-style-type: none;
     border: none;
     outline: none;
+    font-family: 'sans';
+}
+@font-face {
+    font-family: 'sans';
+    src: url(../assets/fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf);
 }
 .flex
 {
@@ -29,6 +34,8 @@ body
     --item-clr: #fff;
     --text-clr: #19202D;
     --p-clr: #6E8098;
+    --btn-clr: #F4F6F8;
+    --viol-clr: #5964e0;
 }
 :root[data-them='dark']
 {
@@ -36,6 +43,8 @@ body
     --item-clr: #19202D;
     --text-clr: #fff;
     --p-clr: #9DAEC2;
+    --btn-clr: #6e8098;
+    --viol-clr: #fff;
 }
 :root
 {
@@ -253,8 +262,12 @@ header ._component .header-content span
 }
 header ._component .header-content button
 {
-    background-color: #9DAEC2;
-    color: var(--violet-clr);
+    background-color: var(--btn-clr);
+    color: var(--viol-clr);
+}
+header ._component .header-content button:hover
+{
+    background-color: var(--lightViolet-hover-clr);
 }
 /* DETAILD MAIN */
 main .item-info
@@ -281,11 +294,11 @@ footer
 {
     background-color: var(--item-clr);
     width: 100%;
-    padding: 22px 0;
+    padding: 22px 360px;
 }
 footer .footer-container
 {
-    width: 55%;
+    width: 100%;
     margin: 0 auto;
 }
 footer .footer-container h2
@@ -333,4 +346,13 @@ ul li:before
     font-weight: bold;
     margin-right: 8px;
     margin-right: 32px;
+}
+input
+{
+    color: var(--p-clr);
+}
+.marginator
+{
+    margin-bottom: 28px;
+    margin-top: 40px;
 }
