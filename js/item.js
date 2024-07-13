@@ -22,3 +22,9 @@ function addToHtml() {
         list.appendChild(newItem);
     });
 }
+let currentPage = 0;
+let loadBtn = document.getElementById("load-btn");
+loadBtn.addEventListener("click", () => {
+    currentPage++;
+    addToHtml();
+});
