@@ -47,4 +47,8 @@ function showDetail() {
     itemInfo.querySelector(".item-body .to-do").innerHTML = thisItem.role.items;
     footer.querySelector("h2").innerHTML = thisItem.position;
     footer.querySelector("span").innerHTML = thisItem.contract;
-}
+    let companySiteBtn = document.getElementById("company-site");
+    companySiteBtn.onclick = function () {
+        window.open(thisItem.website, "_blank");
+    };
+} 
