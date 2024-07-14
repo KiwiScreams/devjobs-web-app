@@ -9,7 +9,7 @@ let list = document.getElementById('item-container');
 function addToHtml() {
     items.forEach(item => {
         let newItem = document.createElement('a');
-        newItem.href = '/detail.html?id=' + item.id;
+        newItem.href = './detail.html?id=' + item.id;
         newItem.classList.add('item');
         newItem.innerHTML = `
                 <div class="item-image" style="background-color: ${item.logoBackground};">
